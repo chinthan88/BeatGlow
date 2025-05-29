@@ -1,6 +1,6 @@
 # 🎶 BeatGlow – Live Music Visualizer with Light Sync
 
-**BeatGlow** is a real-time music visualizer that reacts to the beat, amplitude, and energy of any playing song. It’s designed to control smart lights like **Philips Hue** (or any other light system) using a pluggable `LightManager` layer.
+**BeatGlow** is a real-time music visualizer that reacts to the beat, amplitude, and energy of any playing song. It’s designed to control smart lights like Philips Hue (or any other light system) using a pluggable `LightManager` layer.
 
 ---
 
@@ -17,9 +17,9 @@
 
 ## 📸 Screenshots
 
-| Audio Reactive | Beat Detected | Light Pulse |
-|----------------|----------------|-------------|
-| ![Audio](docs/audio.gif) | ![Beat](docs/beat.gif) | ![Pulse](docs/pulse.gif) |
+| Music Beat Party Mode MAC | Music Beat Party Mode iOS |
+|---------------------------|----------------------------|
+| <img src="https://raw.githubusercontent.com/chinthan88/BeatGlow/main/Docs/BeatGlow.gif" alt="BeatGlow Mac" height="500"/> | <div align="center"><img src="https://raw.githubusercontent.com/chinthan88/BeatGlow/main/Docs/BeatGlowiOS.gif" alt="BeatGlow iOS" height="500"/></div> |
 
 ---
 
@@ -56,7 +56,7 @@ You can inject your own light system logic by conforming to this protocol.
 
 - Xcode 15+
 - MacOS 13+
-- iOS 16.0+
+- iOS 15.0+
 - Swift 5.9+
 - Microphone permission (no network needed)
 - Optional: Smart light SDK (e.g., Philips Hue) to connect to `LightManager`
@@ -146,7 +146,7 @@ MIT License – see [LICENSE](LICENSE) for details.
 
 ## 👨‍💻 Author
 
-Made with 🎵, 🧠, and 💡 by Chinthan M (https://github.com/your-username).
+Made with 🎵, 🧠, and 💡 by Chinthan M (https://github.com/chinthan88).
 
 ---
 
