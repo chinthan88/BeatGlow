@@ -1,0 +1,41 @@
+{
+  "configurations" : [
+    {
+      "id" : "683EDF6E-6AF2-464C-AAA4-2FBDDF20B58F",
+      "name" : "Configuration 1",
+      "options" : {
+        "targetForVariableExpansion" : {
+          "containerPath" : "container:BeatGlow.xcodeproj",
+          "identifier" : "1F9A6DD32DE49CD700B3F597",
+          "name" : "BeatGlow"
+        }
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:BeatGlow.xcodeproj",
+      "identifier" : "1F9A6DD32DE49CD700B3F597",
+      "name" : "BeatGlow"
+    },
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:BeatGlow.xcodeproj",
+        "identifier" : "1F9A6DE32DE49CD800B3F597",
+        "name" : "BeatGlowTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BeatGlow.xcodeproj",
+        "identifier" : "1F9A6DED2DE49CD800B3F597",
+        "name" : "BeatGlowUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
