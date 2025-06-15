@@ -27,7 +27,7 @@ jobs:
         id: scheme
         run: echo "default_scheme=BeatGlow" >> $GITHUB_OUTPUT
 
-      - name: Build for macOS
+      - name: Build for macOS (no signing)
         run: |
           scheme=${{ steps.scheme.outputs.default_scheme }}
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then 
@@ -40,9 +40,10 @@ jobs:
           xcodebuild build-for-testing \
             -scheme "$scheme" \
             -"$filetype_parameter" "$file_to_build" \
-            -destination "platform=macOS"
+            -destination "platform=macOS" \
+            CODE_SIGNING_ALLOWED=NO
 
-      - name: Run macOS Tests
+      - name: Run macOS Tests (no signing)
         run: |
           scheme=${{ steps.scheme.outputs.default_scheme }}
           if [ "`ls -A | grep -i \\.xcworkspace\$`" ]; then 
@@ -55,4 +56,5 @@ jobs:
           xcodebuild test-without-building \
             -scheme "$scheme" \
             -"$filetype_parameter" "$file_to_build" \
-            -destination "platform=macOS"
+            -destination "platform=macOS" \
+            CODE_SIGNING_ALLOWED=NO
