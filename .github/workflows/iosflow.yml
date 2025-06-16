@@ -27,6 +27,9 @@ jobs:
         id: scheme
         run: echo "default_scheme=BeatGlow" >> $GITHUB_OUTPUT
 
+      - name: List Available Simulators (for debugging)
+        run: xcrun simctl list devices available
+
       - name: Build for macOS (no signing)
         run: |
           scheme=${{ steps.scheme.outputs.default_scheme }}
