@@ -8,6 +8,7 @@
 import XCTest
 import Combine
 import SwiftUI
+@testable import BeatGlow
 
 final class PartyModeViewModelTests: XCTestCase {
     var viewModel: PartyModeViewModel!

@@ -7,6 +7,7 @@
 
 import Combine
 import SwiftUI
+@testable import BeatGlow
 
 class MockAudioManager: AudioManagerProtocol {
     var amplitudeSubject = PassthroughSubject<Float, Never>()

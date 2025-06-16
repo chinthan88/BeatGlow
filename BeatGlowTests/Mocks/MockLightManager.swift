@@ -6,6 +6,7 @@
 //
 import SwiftUI
 import XCTest
+@testable import BeatGlow
 
 final class MockLightManager: LightManagerProtocol {
     var setColorCalledWith: Color?

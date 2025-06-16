@@ -37,41 +37,9 @@
 		1F9A6DEE2DE49CD800B3F597 /* BeatGlowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeatGlowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1FFF3B9F2DE5DD8E0010BCE1 /* Exceptions for "BeatGlow" folder in "BeatGlowTests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Audio/AudioManager.swift,
-				Audio/AudioManagerProtocol.swift,
-				BeatGlowApp.swift,
-				Features/PartyMode/View/PartyModeView.swift,
-				Features/PartyMode/ViewModel/PartyModeViewModel.swift,
-				Light/LightManager.swift,
-				Light/LightManagerProtocol.swift,
-			);
-			target = 1F9A6DE32DE49CD800B3F597 /* BeatGlowTests */;
-		};
-		1FFF3BA02DE5DD8E0010BCE1 /* Exceptions for "BeatGlow" folder in "BeatGlowUITests" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Audio/AudioManager.swift,
-				Audio/AudioManagerProtocol.swift,
-				BeatGlowApp.swift,
-				Features/PartyMode/ViewModel/PartyModeViewModel.swift,
-				Light/LightManager.swift,
-				Light/LightManagerProtocol.swift,
-			);
-			target = 1F9A6DED2DE49CD800B3F597 /* BeatGlowUITests */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		1F9A6DD62DE49CD700B3F597 /* BeatGlow */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				1FFF3B9F2DE5DD8E0010BCE1 /* Exceptions for "BeatGlow" folder in "BeatGlowTests" target */,
-				1FFF3BA02DE5DD8E0010BCE1 /* Exceptions for "BeatGlow" folder in "BeatGlowUITests" target */,
-			);
 			path = BeatGlow;
 			sourceTree = "<group>";
 		};
@@ -178,7 +146,6 @@
 				1F9A6DE02DE49CD800B3F597 /* Sources */,
 				1F9A6DE12DE49CD800B3F597 /* Frameworks */,
 				1F9A6DE22DE49CD800B3F597 /* Resources */,
-				1FFF3C822DE789D90010BCE1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -228,7 +195,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					1F9A6DD32DE49CD700B3F597 = {
 						CreatedOnToolsVersion = 16.2;
@@ -293,23 +260,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1FFF3C822DE789D90010BCE1 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
-		};
 		1FFF3C832DE78D950010BCE1 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -403,6 +353,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HP4HRW72RK;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -466,6 +417,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HP4HRW72RK;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -497,7 +449,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeatGlow/Preview Content\"";
-				DEVELOPMENT_TEAM = HP4HRW72RK;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -536,7 +487,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeatGlow/Preview Content\"";
-				DEVELOPMENT_TEAM = HP4HRW72RK;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -571,7 +521,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HP4HRW72RK;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -585,7 +534,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeatGlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeatGlow";
 			};
 			name = Debug;
 		};
@@ -595,7 +544,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HP4HRW72RK;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -609,7 +557,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeatGlow.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeatGlow";
 			};
 			name = Release;
 		};
@@ -618,7 +566,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HP4HRW72RK;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
@@ -642,7 +589,6 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HP4HRW72RK;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
